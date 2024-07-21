@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+/* Basic Reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+	height: 100vh;
+	display: flex;
+	font-family: 'Fira Code', monospace;
+}
+
+/* Container for Text Areas */
+.container {
+	background: #1e1e1e; /* Dark background color */
+	color: #d4d4d4; /* Light text color */
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 100vh;
+	margin: 0;
+}
+
+/* Button Styling */
+#btn {
+	background: #007acc; /* Blue background */
+	color: white;
+	font-size: 1rem;
+	width: 100px;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	margin: 10px auto; /* Centered */
+	border-radius: 5px; /* Rounded corners */
+}
+
+/* Button Hover and Active States */
+#btn:hover {
+	background: #005a9e; /* Darker blue on hover */
+}
+
+#btn:active {
+	background: #004080; /* Even darker blue on click */
+}
+
+/* Styling for Text Areas */
+.container textarea {
+	background-color: #1e1e1e; /* Dark background */
+	border: 1px solid #333; /* Slightly lighter border */
+	color: #d4d4d4; /* Light text color */
+	font-size: 1rem;
+	padding: 10px;
+	resize: none;
+	overflow-y: auto;
+	line-height: 1.5;
+	font-family: 'Fira Code', monospace; /* Monospace font */
+}
+
+/* Focus State for Text Areas */
+.container textarea:focus {
+	outline: none;
+	border-color: #007acc; /* Blue border for focus */
+}
+
+/* Specific Heights for Text Areas */
+#htmlCode, #cssCode, #javascriptCode {
+	flex: 1;
+}
+
+/* Flex Container Adjustments */
+.container {
+	flex-direction: column;
+	display: flex;
+}
+
+/* Styling for the Iframe Container */
+.iframe-container {
+	background: #1e1e1e;
+	width: 50%;
+	height: 100vh;
+	margin: 0;
+}
+
+/* Iframe Styling */
+#viewer {
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: #ffffff;
+}
+
+/* Split.js Styling */
+.split {
+	width: 100%;
+	height: 100%;
+}
+
+.gutter {
+	cursor: e-resize;
+	background: #333; /* Darker background for the splitter */
+}
+
+.gutter.gutter-horizontal {
+	cursor: ew-resize;
+}
+
+/* Scrollbar Styling for Text Areas */
+.container textarea::-webkit-scrollbar {
+	width: 8px;
+}
+
+.container textarea::-webkit-scrollbar-thumb {
+	background: #333; /* Darker scrollbar thumb */
+	border-radius: 4px;
+}
+
+.container textarea::-webkit-scrollbar-track {
+	background: #1e1e1e; /* Matching background */
+}

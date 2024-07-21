@@ -1,0 +1,25 @@
+ <h1 id="hello">Hello</h1>
+    <button id="hideButton">Hide</button>
+
+
+
+
+    <style>
+    h1 {
+    color: red;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+</style>
+
+<script>
+
+
+document.getElementById('hideButton').addEventListener('click', () => {
+    document.getElementById('hello').classList.add('hidden');
+});
+
+
+</script>
